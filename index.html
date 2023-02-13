@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <style>
+        .hilang {
+
+            color: transparent;
+            height: 100%;
+            border-radius: 5px;
+            border: 0;
+            background: rgb(148, 146, 146);
+            outline: 0;
+            animation: animeh 2s infinite forwards;
+        }
+
+
+
+        .gambar {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            background-position: top;
+            background-size: cover;
+        }
+
+        @keyframes animeh {
+
+            0%,
+            100% {
+                background: rgb(148, 146, 146);
+            }
+
+            50% {
+                background: rgb(201, 200, 200);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <!-- todo ================================== -->
+        <div class="col-4">
+            <div class="card m-auto mt-5" style="width: 18rem;">
+                <div class="card-img-top gambar hilang" style="background-image: url('animeh.jpg');"></div>
+                <div class="card-body ">
+                    <h5 class="card-title hilang">Kamado Tanjiro</h5>
+                    <p class="card-text hilang">Adalah Seorang warga bisa yg punya kekuatan pendengaran tajam , yang
+                        nantinya
+                        dilatih menjadi pembasmi iblis dengan pernapasan mataharinya</p>
+                    <a href="#" class="btn btn-primary hilang">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+        <!-- todo ================================== -->
+        <div class="col-4">
+            <div class="card m-auto mt-5" style="width: 18rem;">
+                <div class="card-img-top gambar hilang" style="background-image: url('hasibarainouske.jpg');"></div>
+                <div class="card-body ">
+                    <h5 class="card-title hilang">hashibira inosuke</h5>
+                    <p class="card-text hilang">Adalah Seorang remaja yang selalu berlatih agar menjadi kuat dan ikut
+                        bergabung
+                        menjadi pemburu iblis dengan memakai kepala babi , perut sixpack dan pedang bergerigi</p>
+                    <a href="#" class="btn btn-primary hilang">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+        <!-- todo ================================== -->
+        <div class="col-4">
+            <div class="card m-auto mt-5" style="width: 18rem;">
+                <div class="card-img-top gambar hilang" style="background-image: url('zenitsu.jpg');"></div>
+                <div class="card-body ">
+                    <h5 class="card-title hilang">zenitsu agatsuma</h5>
+                    <p class="card-text hilang">Adalah Seorang remaja yang lemah dengan kekuatan listrik
+                        untuk membunih para iblis yang tekah membunuh orangtua nya, dia ini suka sama kamado nezuko
+                    </p>
+                    <a href="#" class="btn btn-primary hilang">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+        <!-- todo ================================== -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+
+    <script src="sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="../js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            Swal.fire(
+                'Selamat!',
+                'Halaman Berhasil Di LOAD!',
+                'success'
+            );
+            setTimeout(() => {
+                $('.hilang').removeClass("hilang");
+                console.info('oke');
+            }, 3000);
+        });
+    </script>
+</body>
+
+</html>
